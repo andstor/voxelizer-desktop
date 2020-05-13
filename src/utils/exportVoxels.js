@@ -8,7 +8,8 @@ const exportVoxels = (voxels, format) => {
 			exporter = new BINVOXExporter();
 			break;
 		case 'xml':
-			exporter = new XMLExporter();
+            exporter = new XMLExporter();
+            break;
 		default:
 			break;
 	}

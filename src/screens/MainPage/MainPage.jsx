@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react';
 import ThreeWindow from '../../components/ThreeWindow/ThreeWindow';
 import '../../index.css';
 import './MainPage.css';
-import * as THREE from 'three';
 import Controllers from '../../components/Controllers/Controllers';
 import { voxelize } from '../../utils/voxelize';
 import { generateMesh } from '../../utils/generateMesh';
@@ -40,15 +39,6 @@ class MainPage extends Component {
     }
 
     voxelize() {
-        var torus_geom = new THREE.TorusBufferGeometry(10, 3, 16, 100);
-        var torus_material = new THREE.MeshPhongMaterial({
-            color: 0x156289,
-            emissive: 0x072534,
-            side: THREE.FrontSide,
-            flatShading: true
-        });
-        let torus = new THREE.Mesh(torus_geom, torus_material);
-
         const { resolution, color, fill } = this.state;
         const options = { color, fill };
         this.volume = voxelize(this.props.data, options, resolution);
@@ -81,7 +71,6 @@ class MainPage extends Component {
     }
 
     render() {
-        const { data } = this.props;
         return (
             <Fragment>
                 <div className="btnBack"><button onClick={this.handleGoBack} /></div>

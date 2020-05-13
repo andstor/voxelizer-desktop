@@ -66,7 +66,7 @@
 		"babel-plugin-react-intl": "^5.1.13",
 		"devtron": "^1.4.0",
 		"electron": "^7.1.1",
-		"electron-builder": "^21.2.0",
+		"electron-builder": "^22.6.0",
 		"electron-devtools-installer": "^2.2.4",
 		"np": "^5.0.3",
 		"react-intl-translations-manager": "^5.0.3",
