@@ -1,7 +1,7 @@
 {
 	"name": "voxelizer-desktop",
 	"productName": "Voxelizer",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Easy 3D model voxelization desktop app",
 	"license": "MIT",
 	"private": true,
