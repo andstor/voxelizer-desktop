@@ -48,7 +48,7 @@ class MainPage extends Component {
 
     updateNumVoxels() {
         let dimensions = this.volume.voxels.shape;
-        let numVoxels = dimensions[0] + dimensions[1] + dimensions[2];
+        let numVoxels = dimensions[0] * dimensions[1] * dimensions[2];
         this.setState({ numVoxels: numVoxels })
 
     }
