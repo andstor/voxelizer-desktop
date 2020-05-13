@@ -1,0 +1,134 @@
+{
+	"name": "voxelizer-desktop",
+	"productName": "Voxelizer",
+	"version": "1.0.0",
+	"description": "Easy 3D model voxelization desktop app",
+	"license": "MIT",
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/andstor/voxelizer-desktop.git"
+	},
+	"author": {
+		"name": "André Storhaug",
+		"email": "andr3.storhaug@gmail.com",
+		"url": "https://github.com/andstor"
+	},
+	"homepage": "./",
+	"main": "public/electron.js",
+	"scripts": {
+		"start": "nf start -p 3300",
+		"build": "react-scripts build --profile",
+		"postinstall": "electron-builder install-app-deps",
+		"test": "react-scripts test --env=jsdom",
+		"electron": "electron .",
+		"electron-start": "node scripts/start-react",
+		"react-start": "BROWSER=none react-scripts start",
+		"react-eject": "react-scripts eject",
+		"extract-messages": "node ./scripts/translate.js",
+		"manage-translations": "node ./scripts/translationRunner.js",
+		"translate": "npm run extract-messages; npm run manage-translations",
+		"pack": "npm run build && electron-builder --dir",
+		"dist": "npm run build && electron-builder  --macos --linux --windows",
+		"release": "np"
+	},
+	"dependencies": {
+		"@testing-library/jest-dom": "^4.2.4",
+		"@testing-library/react": "^9.4.0",
+		"@testing-library/user-event": "^7.2.1",
+		"electron-context-menu": "^0.15.0",
+		"electron-debug": "^3.0.0",
+		"electron-log": "^4.0.2",
+		"electron-store": "^5.1.0",
+		"electron-unhandled": "^3.0.0",
+		"electron-updater": "^4.0.6",
+		"electron-util": "^0.13.0",
+		"node-sass": "^4.13.0",
+		"prop-types": "^15.7.2",
+		"react": "^16.12.0",
+		"react-dom": "^16.12.0",
+		"react-intl": "^3.9.3",
+		"react-redux": "^7.2.0",
+		"react-router": "^5.1.2",
+		"react-router-dom": "^5.1.2",
+		"react-scripts": "3.3.0",
+		"redux": "^4.0.5",
+		"redux-devtools-extension": "^2.13.8",
+		"redux-thunk": "^2.3.0",
+		"stats.js": "^0.17.0",
+		"three": "^0.115.0",
+		"three-voxel-loader": "^1.2.2",
+		"voxelizer": "^1.0.0"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.7.7",
+		"@babel/core": "^7.7.7",
+		"babel-plugin-react-intl": "^5.1.13",
+		"devtron": "^1.4.0",
+		"electron": "^7.1.1",
+		"electron-builder": "^21.2.0",
+		"electron-devtools-installer": "^2.2.4",
+		"np": "^5.0.3",
+		"react-intl-translations-manager": "^5.0.3",
+		"typescript": "^3.7.4",
+		"xo": "^0.25.3"
+	},
+	"xo": {
+		"envs": [
+			"node",
+			"browser"
+		]
+	},
+	"np": {
+		"publish": false,
+		"releaseDraft": false
+	},
+	"build": {
+		"appId": "com.andrestorhaug.voxelizer",
+		"files": [
+			"build/**/*",
+			"package.json"
+		],
+		"directories": {
+			"buildResources": "assets"
+		},
+		"mac": {
+			"category": "public.app-category.utilities",
+			"darkModeSupport": true
+		},
+		"dmg": {
+			"iconSize": 160,
+			"contents": [
+				{
+					"x": 180,
+					"y": 170
+				},
+				{
+					"x": 480,
+					"y": 170,
+					"type": "link",
+					"path": "/Applications"
+				}
+			]
+		},
+		"linux": {
+			"target": [
+				"AppImage",
+				"deb"
+			],
+			"category": "Utility"
+		}
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
+}

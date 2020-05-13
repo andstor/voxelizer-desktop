@@ -1,0 +1,21 @@
+.btnBack {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.btnBack button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 30px;
+    background-image: url('./images/arrow-left-circle.svg');
+    background-size: 100% auto;
+}
+
+.btnBack button:hover {
+    background-color: #aaaaaa;
+}
+.btnBack button:active {
+    background-color: #555555;
+}

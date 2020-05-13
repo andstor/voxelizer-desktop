@@ -1,0 +1,13 @@
+{
+  "add.edit": "Endre {code} og lagre for å laste inn på nytt.",
+  "controls.color": "Farge",
+  "controls.export": "Eksporter",
+  "controls.export-format": "Eksport format",
+  "controls.exporting": "Eksportering",
+  "controls.fill-volume": "Fyll volum",
+  "controls.resolution": "Oppløsning",
+  "controls.settings": "Innstillinger",
+  "controls.voxelize": "Voxeliser",
+  "controls.voxels": "Voxler",
+  "fileDrop.drop_here": "Slipp filer her"
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "controls.settings",
+    "defaultMessage": "Settings"
+  },
+  {
+    "id": "controls.fill-volume",
+    "defaultMessage": "Fill volume"
+  },
+  {
+    "id": "controls.color",
+    "defaultMessage": "Color"
+  },
+  {
+    "id": "controls.resolution",
+    "defaultMessage": "Resolution"
+  },
+  {
+    "id": "controls.voxelize",
+    "defaultMessage": "Voxelize"
+  },
+  {
+    "id": "controls.exporting",
+    "defaultMessage": "Exporting"
+  },
+  {
+    "id": "controls.export-format",
+    "defaultMessage": "Export format"
+  },
+  {
+    "id": "controls.voxels",
+    "defaultMessage": "Voxels"
+  },
+  {
+    "id": "controls.export",
+    "defaultMessage": "Export"
+  }
+]

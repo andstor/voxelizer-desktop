@@ -1,0 +1,13 @@
+{
+  "add.edit": "Edit {code} and save to reload.",
+  "controls.color": "Color",
+  "controls.export": "Export",
+  "controls.export-format": "Export format",
+  "controls.exporting": "Exporting",
+  "controls.fill-volume": "Fill volume",
+  "controls.resolution": "Resolution:",
+  "controls.settings": "Settings",
+  "controls.voxelize": "Voxelize",
+  "controls.voxels": "Voxels",
+  "fileDrop.drop_here": "Drop file here"
+}
