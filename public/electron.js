@@ -2,7 +2,7 @@
 const path = require('path');
 const url = require('url')
 const { app, BrowserWindow, Menu, ipcMain, dialog, globalShortcut } = require('electron');
-/// const {autoUpdater} = require('electron-updater');
+const {autoUpdater} = require('electron-updater');
 const { is } = require('electron-util');
 const unhandled = require('electron-unhandled');
 const debug = require('electron-debug');
