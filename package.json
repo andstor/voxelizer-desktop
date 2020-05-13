@@ -1,7 +1,7 @@
 {
 	"name": "voxelizer-desktop",
 	"productName": "Voxelizer",
-    "version": "0.1.0",
+	"version": "1.0.0",
 	"description": "Easy 3D model voxelization desktop app",
 	"license": "MIT",
 	"private": true,
@@ -19,7 +19,7 @@
 	"scripts": {
 		"start": "nf start -p 3300",
 		"build": "react-scripts build --profile",
-        "postinstall": "electron-builder install-app-deps",
+		"postinstall": "electron-builder install-app-deps",
 		"test": "CI=true react-scripts test --env=jsdom --passWithNoTests",
 		"electron": "electron .",
 		"electron-start": "node scripts/start-react",
