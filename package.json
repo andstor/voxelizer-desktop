@@ -19,8 +19,8 @@
 	"scripts": {
 		"start": "nf start -p 3300",
 		"build": "react-scripts build --profile",
-		"postinstall": "electron-builder install-app-deps",
-		"test": "react-scripts test --env=jsdom",
+        "postinstall": "electron-builder install-app-deps",
+		"test": "CI=true react-scripts test --env=jsdom --passWithNoTests",
 		"electron": "electron .",
 		"electron-start": "node scripts/start-react",
 		"react-start": "BROWSER=none react-scripts start",
