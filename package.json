@@ -30,7 +30,7 @@
 		"translate": "npm run extract-messages; npm run manage-translations",
 		"pack": "npm run build && electron-builder --dir",
 		"dist": "npm run build && electron-builder  --macos --linux --windows",
-		"release": "np"
+		"release": "GH_TOKEN=406c02247e965c1abd9ddf6d9c9dc71424cbe3b9 npm run dist -- -p always"
 	},
 	"dependencies": {
 		"@testing-library/jest-dom": "^4.2.4",
@@ -68,6 +68,7 @@
 		"electron": "^7.2.4",
 		"electron-builder": "^22.6.0",
 		"electron-devtools-installer": "^2.2.4",
+		"foreman": "^3.0.1",
 		"np": "^5.0.3",
 		"react-intl-translations-manager": "^5.0.3",
 		"typescript": "^3.9.2",
