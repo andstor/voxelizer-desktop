@@ -30,7 +30,7 @@
 		"translate": "npm run extract-messages; npm run manage-translations",
 		"pack": "npm run build && electron-builder --dir",
 		"dist": "npm run build && electron-builder  --macos --linux --windows",
-		"release": "GH_TOKEN=406c02247e965c1abd9ddf6d9c9dc71424cbe3b9 npm run dist -- -p always"
+		"release": "np"
 	},
 	"dependencies": {
 		"@testing-library/jest-dom": "^4.2.4",
