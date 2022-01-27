@@ -56,7 +56,7 @@
 		"redux-devtools-extension": "^2.13.8",
 		"redux-thunk": "^2.3.0",
 		"stats.js": "^0.17.0",
-		"three": "^0.115.0",
+		"three": "^0.137.0",
 		"three-voxel-loader": "^1.2.2",
 		"voxelizer": "^1.0.0"
 	},
