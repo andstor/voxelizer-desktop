@@ -43,7 +43,7 @@
 		"electron-unhandled": "^3.0.2",
 		"electron-updater": "^4.3.1",
 		"electron-util": "^0.13.0",
-		"node-sass": "^4.14.1",
+		"node-sass": "^7.0.0",
 		"prop-types": "^15.7.2",
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1",
