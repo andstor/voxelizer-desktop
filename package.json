@@ -65,7 +65,7 @@
 		"@babel/core": "^7.9.6",
 		"babel-plugin-react-intl": "^5.1.18",
 		"devtron": "^1.4.0",
-		"electron": "^7.2.4",
+		"electron": "^13.6.6",
 		"electron-builder": "^22.6.0",
 		"electron-devtools-installer": "^2.2.4",
 		"foreman": "^3.0.1",
